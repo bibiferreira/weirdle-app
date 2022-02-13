@@ -46,7 +46,7 @@
     background-color: #d7eccb;
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     #keyboard {
         margin-top: 20px;
     }
@@ -56,6 +56,11 @@
     }
 
     #keyboard > div > div > button {
-        padding: 6px;
+        width: 35px;
+        height: 35px
+    }
+
+    #keyboard > div > div > button.keyboard-buttom-action {
+      width: 50px;
     }
 }

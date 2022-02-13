@@ -14,8 +14,8 @@ body {
 }
 
 /* Small devices (tablets, 768px and up) */
-@media (max-width: 768px) { 
+@media (max-width: 768px) {
     .container {
-        width: 400px;
+        width: 375px;
     }
 }
