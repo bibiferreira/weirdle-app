@@ -1,0 +1,61 @@
+#keyboard {
+    margin-top: 40px;
+}
+
+#keyboard > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#keyboard > div > div {
+    padding: 3px;
+}
+
+#keyboard > div > div > button {
+    font-weight: bold;
+    border-radius: 4px;
+    height: 44px;
+}
+
+#keyboard > div > div > button:hover {
+    opacity: 0.7;
+}
+
+.keyboard-buttom {
+    background-color: #79a37d;
+    color: #d7eccb;
+    border: 1px solid #79a37d;
+    width: 44px;
+}
+
+.keyboard-buttom:active {
+    color: #79a37d;
+    background-color: #d7eccb;
+}
+
+.keyboard-buttom-action {
+    background-color: #00454a;
+    color: #d7eccb;
+    border: 1px solid #00454a;
+    width: 68px;
+}
+
+.keyboard-buttom-action:active {
+    color: #00454a;
+    background-color: #d7eccb;
+}
+
+@media (max-width: 768px) {
+    #keyboard {
+        margin-top: 20px;
+    }
+
+    #keyboard > div > div {
+        padding: 1px;
+    }
+
+    #keyboard > div > div > button {
+        padding: 6px;
+    }
+}

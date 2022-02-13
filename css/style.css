@@ -1,0 +1,21 @@
+@import url("./base.css");
+@import url("./header.css");
+@import url("./game.css");
+@import url("./keyboard.css");
+@import url("./overlay.css");
+
+body {
+    background-color: #d7eccb;
+}
+
+.container {
+    width: 500px;
+    margin: 0 auto;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 768px) { 
+    .container {
+        width: 400px;
+    }
+}

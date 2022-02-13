@@ -1,0 +1,50 @@
+#game {
+    margin-top: 40px;
+}
+
+.game-box {
+    aspect-ratio: 1;
+    padding: 5px;
+}
+
+.game-box > div {
+    box-shadow: 2px 2px 3px #b02522;
+    aspect-ratio: 1;
+    position: relative;
+}
+
+.game-box > div > p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: joker;
+    font-size: 40px;
+    color: #00454a;
+    font-style: bold;
+    
+}
+
+.wrong-letter div {
+    background-color: #b02522;
+}
+
+.wrong-letter div p {
+    color: #d7eccb;
+}
+
+.correct-letter div {
+    background-color: #f26d42;
+}
+
+.correct-letter div p {
+    color: #d7eccb;
+}
+
+.correct-position div {
+    background-color: #00b29c;
+}
+
+.correct-position div p {
+    color: #d7eccb;
+}
