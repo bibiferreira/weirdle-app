@@ -242,5 +242,28 @@
     <div id="overlay"></div>
 
     <script src="./scripts/index.js"></script>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyAQu3tA6pAidHWYxJc8uon_h2PE_ZRfH58",
+        authDomain: "weirdle-42ddd.firebaseapp.com",
+        projectId: "weirdle-42ddd",
+        storageBucket: "weirdle-42ddd.appspot.com",
+        messagingSenderId: "668119602227",
+        appId: "1:668119602227:web:f80cb9883ee76f21febf46",
+        measurementId: "G-NPNDKDD2V2"
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
 </body>
 </html>
