@@ -13,6 +13,10 @@ body {
     margin: 0 auto;
 }
 
+button {
+  touch-action: manipulation;
+}
+
 /* Small devices (tablets, 768px and up) */
 @media (max-width: 768px) {
     .container {
