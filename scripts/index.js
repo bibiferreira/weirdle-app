@@ -14,15 +14,13 @@ const fiveLetterWords = [
   'perry'
 ];
 
-
 /** Game Grid */
 const gameRows = document.querySelectorAll('#game > div');
 let wordOfTheDay = fiveLetterWords[Math.floor(Math.random() * fiveLetterWords.length)];
-
+console.log(wordOfTheDay);
 
 // Maximum number of letters per word
 const maxLength = 5;
-
 let currentRow = 0;
 let currentWord = [];
 
@@ -38,25 +36,14 @@ const markBoxAs = (index, className) => {
 
 /** Overlay */
 const createWordBoxes = (letters) => {
-    return `<div class="row game-row-4">
-    <div class="col-md-1 col-xs-1"></div>
-    <div class="col-md-2 col-xs-2 game-box correct-position">
-        <div><p>${letters[0]}</p></div>
-    </div>
-    <div class="col-md-2 col-xs-2 game-box correct-position">
-        <div><p>${letters[1]}</p></div>
-    </div>
-    <div class="col-md-2 col-xs-2 game-box correct-position">
-        <div><p>${letters[2]}</p></div>
-    </div>
-    <div class="col-md-2 col-xs-2 game-box correct-position">
-        <div><p>${letters[3]}</p></div>
-    </div>
-    <div class="col-md-2 col-xs-2 game-box correct-position">
-        <div><p>${letters[4]}</p></div>
-    </div>
-    <div class="col-md-1 col-xs-1"></div>
-</div><br>`;
+  let boxes = '<div class="row game-row-4"><div class="col-md-1 col-xs-1"></div>';
+  for(let index in letters) {
+    boxes += `<div class="col-md-2 col-xs-2 game-box correct-position">
+      <div><p>${letters[index]}</p></div>
+    </div>`;
+  }
+  boxes += '<div class="col-md-1 col-xs-1"></div></div><br>';
+  return boxes;
 }
 
 const resetGame = () => {
