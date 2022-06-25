@@ -17,7 +17,6 @@ const fiveLetterWords = [
 /** Game Grid */
 const gameRows = document.querySelectorAll('#game > div');
 let wordOfTheDay = fiveLetterWords[Math.floor(Math.random() * fiveLetterWords.length)];
-console.log(wordOfTheDay);
 
 // Maximum number of letters per word
 const maxLength = 5;
